@@ -1,6 +1,6 @@
-i = 0
 counts = int(input("Enter the number of counts: "))
 
+i = 0
 while i < counts:
     i += 1
 
