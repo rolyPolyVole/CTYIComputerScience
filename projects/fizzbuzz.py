@@ -1,6 +1,6 @@
-i = 0
 counts = int(input("Enter the number of counts: "))
 
+i = 0
 while i < counts:
     i += 1
 
@@ -9,9 +9,9 @@ while i < counts:
 
     if fizz and buzz:
         print("FizzBuzz")
-    elif fizz == 0:
+    elif fizz:
         print("Fizz")
-    elif buzz == 0:
+    elif buzz:
         print("Buzz")
     else:
         print(i)
