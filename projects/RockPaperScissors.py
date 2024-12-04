@@ -55,8 +55,9 @@ def play_round():
     computer_choice: RPSOption | None = None
     random_num = random.randint(1, 3)
 
+    time.sleep(1.0)
     print("[Game] The Computer is choosing...")
-    time.sleep(2)
+    time.sleep(1.6)
 
     if random_num == 1:
         print("[Game] The Computer chose Rock!")
@@ -68,7 +69,7 @@ def play_round():
         print("[Game] The Computer chose Scissors!")
         computer_choice = Scissors()
 
-    time.sleep(2)
+    time.sleep(1.6)
 
     if computer_choice.wins_against(user_input):
         return print("[Game] You lose!")
@@ -76,7 +77,7 @@ def play_round():
         return print("[Game] You win!")
     else:
         print("[Game] Game was a draw, go again!")
-        time.sleep(1)
+        time.sleep(1.0)
         return play_round()
 
 play_round()
